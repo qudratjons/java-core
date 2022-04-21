@@ -8,6 +8,8 @@ public class Algorithms {
 
         fizzBuzz(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15));
 
+        System.out.println(snakeToCamel("hello_Jonson_baby"));
+
     }
 
     // FIZZ BUZZ solution
@@ -26,4 +28,21 @@ public class Algorithms {
                     System.out.print(",");
                 });
     }
+
+    public static String snakeToCamel(String str) {
+        str = str.substring(0, 1).toUpperCase()
+                + str.substring(1);
+
+        while (str.contains("_")) {
+            str = str
+                    .replaceFirst(
+                            "_[a-z]  _[A-Z]",
+                            String.valueOf(
+                                    Character.toUpperCase(
+                                            str.charAt(
+                                                    str.indexOf("_") + 1))));
+        }
+        return str;
+    }
+
 }
