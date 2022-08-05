@@ -5,11 +5,12 @@ import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class NumberFormatter {
+public class Formatter {
     public static void main(String[] args) {
 
         System.out.println(formatNumber(12378756.89900));
 
+        System.out.printf("%-10s %s %n", "baeldung", "010");
     }
 
     public static String formatNumber(double number) {
