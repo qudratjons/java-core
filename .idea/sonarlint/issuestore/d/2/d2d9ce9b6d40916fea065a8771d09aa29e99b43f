@@ -1,11 +1,24 @@
 
-N	java:S106"9Replace this use of System.out or System.err by a logger.(â÷ºß
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ºè÷È
-S	java:S106"9Replace this use of System.out or System.err by a logger.(½·ˆ„şÿÿÿÿ
+T
+java:S2589"7Remove this expression which always evaluates to "true"(ßì8¸ÖîÊ¬0
+D
+java:S1659""Declare "rows" on a separate line.(“…œ˜úÿÿÿÿ8¾ÖîÊ¬0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(×•œ²
+U	java:S106"9Replace this use of System.out or System.err by a logger.(„ÍüÙ8ÀÖîÊ¬0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
 S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-N	java:S106#"9Replace this use of System.out or System.err by a logger.(×•œ²
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
-S	java:S106)"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-N	java:S1061"9Replace this use of System.out or System.err by a logger.(×•œ²
-S	java:S1065"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
-S	java:S1067"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+U	java:S106""9Replace this use of System.out or System.err by a logger.(â÷ºß8ÂÖîÊ¬0
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(ºè÷È
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(½·ˆ„şÿÿÿÿ8ÄÖîÊ¬0
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(×•œ²
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÇÖîÊ¬0
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(×•œ²8ÇÖîÊ¬0
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ
+Z	java:S106K"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÈÖîÊ¬0
+Z	java:S106M"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÈÖîÊ¬0
+J
+java:S1144 "-Remove this unused private "drawRomb" method.(ûà×Ç8ÉÖîÊ¬0
