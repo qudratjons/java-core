@@ -1,18 +1,14 @@
 package com.company.patterns.structural.bridge;
 
 public class BridgeMain {
+
     public static void main(String[] args) {
-        Device device = new TV();
-        System.out.println(device);
+        Shape square = new Square(new Blue());
+        System.out.println(square.draw());
 
-        Remote remote = new Remote(device);
-        remote.togglePower();
-        remote.channelDown();
-        System.out.println(device);
+        square.color = new Red();
 
-
-        AdvancedRemote advancedRemote = new AdvancedRemote(device);
-        advancedRemote.mute();
-        System.out.println(device);
+        System.out.println(square.draw());
     }
+
 }
