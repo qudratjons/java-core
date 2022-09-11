@@ -7,7 +7,6 @@ import java.net.URL;
 
 
 public class HttpRequest {
-    private static HttpURLConnection connection;
     public static void main(String[] args) {
         WConsoleBanner.writeOnTheConsole();
 
@@ -17,7 +16,7 @@ public class HttpRequest {
             StringBuffer response = new StringBuffer();
 
             URL url = new URL("https://jsonplaceholder.typicode.com/albums");
-            connection = (HttpURLConnection) url.openConnection();
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setConnectTimeout(5000);
             connection.setReadTimeout(5000);
@@ -27,7 +26,7 @@ public class HttpRequest {
                 bufferedReader = new BufferedReader(new InputStreamReader(connection.getErrorStream()));
                 for (int i = 0; i <= 9; i++) {
                     line = bufferedReader.readLine();
-                    response.append(line + "\n");
+                    response.append(line).append("\n");
                 }
                 System.out.println(response);
             }
@@ -36,7 +35,7 @@ public class HttpRequest {
             bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             for (int i = 0; i <= 501; i++) {
                 line = bufferedReader.readLine();
-                response.append(line + "\n");
+                response.append(line).append("\n");
             }
             System.out.println(response);
 
