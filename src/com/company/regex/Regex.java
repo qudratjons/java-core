@@ -12,6 +12,10 @@ package com.company.regex;
  9) "\W" - no letters, digits and _
  10) "&&" - and operator
  11) "^" - should not contain character, example: "^_", [\w&&[^_]] is equal [a-zA-Z0-9]
+ 12) "|" - or operator
+ 13) "()" - group
+ 14) "[]" -set of elements
+ 15) "^" start of text "$" end of the text: "^Java.?Python$" == "Java Python"
 
    Number of characters
  1) "*" - from zero to infinity
@@ -23,9 +27,9 @@ package com.company.regex;
  */
 public class Regex {
 
-    private static final String REGEX = "[.\\D]*Java.*";
+    private static final String REGEX = "^Java.?Python$";
     public static void main(String[] args) {
-        String s = "sdsdvczJava";
+        String s = "Java Python";
 
         if (s.matches(REGEX))
             System.out.println("Matches");
