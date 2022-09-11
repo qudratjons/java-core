@@ -13,13 +13,21 @@ package com.company.regex;
  10) "&&" - and operator
  11) "^" - should not contain character, example: "^_", [\w&&[^_]] is equal [a-zA-Z0-9]
 
+   Number of characters
+ 1) "*" - from zero to infinity
+ 2) "+" - from one to infinity
+ 3) "?" - 0 times or 1 times
+ 4) "{n}" - n times
+ 5) "{n,}" - minimum n times maximum is infinity;
+ 5) "{n,m}" - minimum n times maximum is m;
  */
 public class Regex {
+
+    private static final String REGEX = "[.\\D]*Java.*";
     public static void main(String[] args) {
+        String s = "sdsdvczJava";
 
-        String s = "Java";
-
-        if (s.matches("J[a-zA-Z0-9].a"))
+        if (s.matches(REGEX))
             System.out.println("Matches");
         else
             System.out.println("Not matches");
