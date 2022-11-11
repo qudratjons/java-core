@@ -1,4 +1,4 @@
-package com.company;
+package com.company.cryptography;
 
 import javax.crypto.Cipher;
 import java.io.File;

@@ -1,4 +1,6 @@
-package com.company;
+package com.company.cryptography;
+
+import com.company.WConsoleBanner;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -11,7 +13,7 @@ import java.util.Scanner;
 
 public class Cryptography {
 
-    private static String digest3DES ="HG58YZ3CR9T72TTD#H@DSH@#@Y*23!";
+    private static final String digest3DES ="HG58YZ3CR9T72TTD#H@DSH@#@Y*23!";
     private static final char[] HEX_ARRAY = "0123456789ABCDEF".toCharArray();
 
 
@@ -33,7 +35,7 @@ public class Cryptography {
     private static String encrypt(String message) throws Exception {
         final MessageDigest md = MessageDigest.getInstance("md5");
         final byte[] digestOfPassword = md.digest(digest3DES
-                .getBytes("utf-8"));
+                .getBytes(StandardCharsets.UTF_8));
         final byte[] keyBytes = Arrays.copyOf(digestOfPassword, 24);
         for (int j = 0, k = 16; j < 8; ) {
             keyBytes[k++] = keyBytes[j++];
@@ -71,7 +73,7 @@ public class Cryptography {
         // sun.misc.BASE64Decoder().decodeBuffer(message);
         final byte[] plainText = decipher.doFinal(message);
 
-        return new String(plainText, "UTF-8");
+        return new String(plainText, StandardCharsets.UTF_8);
     }
 
     private static String bytesToHex(byte[] bytes) {
